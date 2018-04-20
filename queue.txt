@@ -1,0 +1,19 @@
+import.java.util.*
+
+Public class Queue{
+Public static void main(String[] args)
+{
+Queue<String>queue=new Linked list<>();
+
+queue.add("one");
+
+queue.add("two");
+
+queue.add("three");
+
+System.out.println(queue)
+
+queue.remove("three");
+
+System.out.println("Queue Size: " + queue.size());
+}}

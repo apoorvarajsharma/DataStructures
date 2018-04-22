@@ -1,0 +1,41 @@
+public class BubbleSort   //main class
+{  
+
+    static void bubbleSort(int[] arr)  //method for bubble sort
+       {  
+        int n = arr.length;       //n is assigned the length of array
+        int temp = 0;             //temporary variable for swapping is declared
+         for(int i=0; i < n; i++) //loop to traverse the whole` array
+               {  
+                 for(int j=1; j < (n-i); j++) //loop for each element
+                       {  
+                          if(arr[j-1] > arr[j]) //all the adjacent elements are compared 
+                          {  
+                                                   //swap elements  
+                                 temp = arr[j-1];  
+                                 arr[j-1] = arr[j];  
+                                 arr[j] = temp;  
+                         }  
+                          
+                       }  
+                }  
+  
+       }  
+    public static void main(String[] args) {  
+                int arr[] ={3,60,35,2,45,320,5};  
+                 
+                System.out.println("Array Before Bubble Sort");  //prints the statement
+                for(int i=0; i < arr.length; i++){  
+                        System.out.print(arr[i] + " ");         //prints the array
+                }  
+                System.out.println();  
+                  
+                bubbleSort(arr);    //sorting array elements using bubble sort method
+                 
+                System.out.println("Array After Bubble Sort");  //prints the statement
+                for(int i=0; i < arr.length; i++){  
+                        System.out.print(arr[i] + " ");        //prints the sorted array 
+                }  
+   
+        }  
+}  
